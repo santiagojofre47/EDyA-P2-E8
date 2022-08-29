@@ -69,5 +69,5 @@ if __name__ == '__main__':
 
     print('--- \tTiempos promedio de espera en la cola de cada especialidad \t---')
     for k in range(4):
-        print('Promedio en la especialidad {0: .2f} minutos'.format(manejadorEspecialidades[k].calcular_tiempo_Promedio()))
+        print('Promedio en la especialidad {}: {} minutos'.format(manejadorEspecialidades[k].getNombre(),manejadorEspecialidades[k].calcular_tiempo_Promedio()))
     print('Cantidad de pacientes que no pudieron obtener turno: {}'.format(cant_pacientes_cola-cant_pacientes_atendidos))
